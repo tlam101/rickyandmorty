@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">rickandmorty</string>
+
+    <string-array name="choices">
+        <item>Characters</item>
+        <item>Locations</item>
+    </string-array>
+</resources>

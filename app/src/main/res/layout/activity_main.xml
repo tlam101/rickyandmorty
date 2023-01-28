@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="Orientation">
+
+    <Spinner
+        android:id="@+id/selectionSpinner"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerTextView"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTextView" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Confirm"
+        app:layout_constraintEnd_toEndOf="@+id/selectionSpinner"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="@+id/selectionSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/orderCheckBox" />
+
+    <TextView
+        android:id="@+id/TitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Ricky and Morty"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <CheckBox
+        android:id="@+id/orderCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Alphabetical order"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/selectionSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/selectionSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/selectionSpinner" />
+
+    <TextView
+        android:id="@+id/spinnerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Select Characters or Locations"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="@+id/TitleTextView"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="@+id/TitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/TitleTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
