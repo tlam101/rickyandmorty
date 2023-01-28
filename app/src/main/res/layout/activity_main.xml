@@ -9,25 +9,15 @@
 
     <Spinner
         android:id="@+id/selectionSpinner"
-        android:layout_width="300dp"
+        android:layout_width="330dp"
         android:layout_height="30dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
+        android:autofillHints="Select Characters or Locations"
         app:layout_constraintEnd_toEndOf="@+id/spinnerTextView"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/spinnerTextView"
         app:layout_constraintTop_toBottomOf="@+id/spinnerTextView" />
-
-    <Button
-        android:id="@+id/confirmButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Confirm"
-        app:layout_constraintEnd_toEndOf="@+id/selectionSpinner"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="@+id/selectionSpinner"
-        app:layout_constraintTop_toBottomOf="@+id/orderCheckBox" />
 
     <TextView
         android:id="@+id/TitleTextView"
@@ -42,7 +32,7 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.112" />
 
     <CheckBox
         android:id="@+id/orderCheckBox"
@@ -60,13 +50,13 @@
         android:id="@+id/spinnerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="64dp"
         android:text="Select Characters or Locations"
+        android:textColor="@color/cardview_dark_background"
         android:textSize="14dp"
         android:textStyle="bold"
-        android:textColor="@color/cardview_dark_background"
         app:layout_constraintEnd_toEndOf="@+id/TitleTextView"
-        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TitleTextView"
         app:layout_constraintTop_toBottomOf="@+id/TitleTextView" />
 

@@ -2,6 +2,7 @@
     <string name="app_name">rickandmorty</string>
 
     <string-array name="choices">
+        <item>None</item>>
         <item>Characters</item>
         <item>Locations</item>
     </string-array>

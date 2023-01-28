@@ -10,8 +10,10 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class SelectCharacterActivity extends AppCompatActivity {
-    HttpURLConnection urlConnection = null;
-    URL url;
+    private HttpURLConnection urlConnection = null;
+    private URL url;
+    protected String characterQuery = "rickandmortyapi.com/api/character/";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
